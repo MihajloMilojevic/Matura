@@ -1,0 +1,211 @@
+!!! PROMENITI LOKACIJU FAJLOVA !!!
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura"
+    ServerName matura.milojevicm.tech
+    ServerAlias matura.milojevicm.tech
+    ErrorLog "logs/matura.milojevicm.tech-error.log"
+    CustomLog "logs/matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b1.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B1"
+    ServerName b1.matura.milojevicm.tech
+    ServerAlias b1.matura.milojevicm.tech
+    ErrorLog "logs/b1.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b1.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b2.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B2"
+    ServerName b2.matura.milojevicm.tech
+    ServerAlias b2.matura.milojevicm.tech
+    ErrorLog "logs/b2.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b2.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b3.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B3"
+    ServerName b3.matura.milojevicm.tech
+    ServerAlias b3.matura.milojevicm.tech
+    ErrorLog "logs/b3.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b3.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b4.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B4"
+    ServerName b4.matura.milojevicm.tech
+    ServerAlias b4.matura.milojevicm.tech
+    ErrorLog "logs/b4.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b4.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b5.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B5"
+    ServerName b5.matura.milojevicm.tech
+    ServerAlias b5.matura.milojevicm.tech
+    ErrorLog "logs/b5.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b5.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b6.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B6"
+    ServerName b6.matura.milojevicm.tech
+    ServerAlias b6.matura.milojevicm.tech
+    ErrorLog "logs/b6.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b6.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b7.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B7"
+    ServerName b7.matura.milojevicm.tech
+    ServerAlias b7.matura.milojevicm.tech
+    ErrorLog "logs/b7.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b7.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b8.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B8"
+    ServerName b8.matura.milojevicm.tech
+    ServerAlias b8.matura.milojevicm.tech
+    ErrorLog "logs/b8.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b8.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b9.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B9"
+    ServerName b9.matura.milojevicm.tech
+    ServerAlias b9.matura.milojevicm.tech
+    ErrorLog "logs/b9.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b9.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b10.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B10"
+    ServerName b10.matura.milojevicm.tech
+    ServerAlias b10.matura.milojevicm.tech
+    ErrorLog "logs/b10.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b10.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b11.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B11"
+    ServerName b11.matura.milojevicm.tech
+    ServerAlias b11.matura.milojevicm.tech
+    ErrorLog "logs/b11.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b11.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b12.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B12"
+    ServerName b12.matura.milojevicm.tech
+    ServerAlias b12.matura.milojevicm.tech
+    ErrorLog "logs/b12.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b12.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b13.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B13"
+    ServerName b13.matura.milojevicm.tech
+    ServerAlias b13.matura.milojevicm.tech
+    ErrorLog "logs/b13.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b13.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b14.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B14"
+    ServerName b14.matura.milojevicm.tech
+    ServerAlias b14.matura.milojevicm.tech
+    ErrorLog "logs/b14.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b14.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b15.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B15"
+    ServerName b15.matura.milojevicm.tech
+    ServerAlias b15.matura.milojevicm.tech
+    ErrorLog "logs/b15.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b15.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b16.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B16"
+    ServerName b16.matura.milojevicm.tech
+    ServerAlias b16.matura.milojevicm.tech
+    ErrorLog "logs/b16.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b16.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b17.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B17"
+    ServerName b17.matura.milojevicm.tech
+    ServerAlias b17.matura.milojevicm.tech
+    ErrorLog "logs/b17.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b17.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b18.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B18"
+    ServerName b18.matura.milojevicm.tech
+    ServerAlias b18.matura.milojevicm.tech
+    ErrorLog "logs/b18.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b18.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b19.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B19"
+    ServerName b19.matura.milojevicm.tech
+    ServerAlias b19.matura.milojevicm.tech
+    ErrorLog "logs/b19.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b19.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b20.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B20"
+    ServerName b20.matura.milojevicm.tech
+    ServerAlias b20.matura.milojevicm.tech
+    ErrorLog "logs/b20.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b20.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b21.matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B21"
+    ServerName b21.matura.milojevicm.tech
+    ServerAlias b21.matura.milojevicm.tech
+    ErrorLog "logs/b21.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b21.matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@b.22matura.milojevicm.tech
+    DocumentRoot "C:/xampp/htdocs/Matura/B22"
+    ServerName b.22matura.milojevicm.tech
+    ServerAlias b.22matura.milojevicm.tech
+    ErrorLog "logs/b.22matura.milojevicm.tech-error.log"
+    CustomLog "logs/b.22matura.milojevicm.tech-access.log" common
+</VirtualHost>
+
