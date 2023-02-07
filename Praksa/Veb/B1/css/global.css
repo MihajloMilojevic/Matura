@@ -6,4 +6,14 @@
 
 body {
     background-color: #b4d9eb;
+    min-height: 100vh;
+}
+h1 {
+    color: #2b5480;
+    padding: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

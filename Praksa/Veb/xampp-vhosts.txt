@@ -12,7 +12,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b1.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B1"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B1"
     ServerName b1.matura.milojevicm.tech
     ServerAlias b1.matura.milojevicm.tech
     ErrorLog "logs/b1.matura.milojevicm.tech-error.log"
@@ -21,7 +21,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b2.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B2"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B2"
     ServerName b2.matura.milojevicm.tech
     ServerAlias b2.matura.milojevicm.tech
     ErrorLog "logs/b2.matura.milojevicm.tech-error.log"
@@ -30,7 +30,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b3.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B3"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B3"
     ServerName b3.matura.milojevicm.tech
     ServerAlias b3.matura.milojevicm.tech
     ErrorLog "logs/b3.matura.milojevicm.tech-error.log"
@@ -39,7 +39,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b4.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B4"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B4"
     ServerName b4.matura.milojevicm.tech
     ServerAlias b4.matura.milojevicm.tech
     ErrorLog "logs/b4.matura.milojevicm.tech-error.log"
@@ -48,7 +48,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b5.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B5"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B5"
     ServerName b5.matura.milojevicm.tech
     ServerAlias b5.matura.milojevicm.tech
     ErrorLog "logs/b5.matura.milojevicm.tech-error.log"
@@ -57,7 +57,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b6.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B6"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B6"
     ServerName b6.matura.milojevicm.tech
     ServerAlias b6.matura.milojevicm.tech
     ErrorLog "logs/b6.matura.milojevicm.tech-error.log"
@@ -66,7 +66,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b7.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B7"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B7"
     ServerName b7.matura.milojevicm.tech
     ServerAlias b7.matura.milojevicm.tech
     ErrorLog "logs/b7.matura.milojevicm.tech-error.log"
@@ -75,7 +75,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b8.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B8"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B8"
     ServerName b8.matura.milojevicm.tech
     ServerAlias b8.matura.milojevicm.tech
     ErrorLog "logs/b8.matura.milojevicm.tech-error.log"
@@ -84,7 +84,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b9.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B9"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B9"
     ServerName b9.matura.milojevicm.tech
     ServerAlias b9.matura.milojevicm.tech
     ErrorLog "logs/b9.matura.milojevicm.tech-error.log"
@@ -93,7 +93,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b10.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B10"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B10"
     ServerName b10.matura.milojevicm.tech
     ServerAlias b10.matura.milojevicm.tech
     ErrorLog "logs/b10.matura.milojevicm.tech-error.log"
@@ -102,7 +102,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b11.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B11"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B11"
     ServerName b11.matura.milojevicm.tech
     ServerAlias b11.matura.milojevicm.tech
     ErrorLog "logs/b11.matura.milojevicm.tech-error.log"
@@ -111,7 +111,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b12.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B12"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B12"
     ServerName b12.matura.milojevicm.tech
     ServerAlias b12.matura.milojevicm.tech
     ErrorLog "logs/b12.matura.milojevicm.tech-error.log"
@@ -120,7 +120,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b13.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B13"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B13"
     ServerName b13.matura.milojevicm.tech
     ServerAlias b13.matura.milojevicm.tech
     ErrorLog "logs/b13.matura.milojevicm.tech-error.log"
@@ -129,7 +129,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b14.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B14"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B14"
     ServerName b14.matura.milojevicm.tech
     ServerAlias b14.matura.milojevicm.tech
     ErrorLog "logs/b14.matura.milojevicm.tech-error.log"
@@ -138,7 +138,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b15.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B15"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B15"
     ServerName b15.matura.milojevicm.tech
     ServerAlias b15.matura.milojevicm.tech
     ErrorLog "logs/b15.matura.milojevicm.tech-error.log"
@@ -147,7 +147,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b16.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B16"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B16"
     ServerName b16.matura.milojevicm.tech
     ServerAlias b16.matura.milojevicm.tech
     ErrorLog "logs/b16.matura.milojevicm.tech-error.log"
@@ -156,7 +156,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b17.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B17"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B17"
     ServerName b17.matura.milojevicm.tech
     ServerAlias b17.matura.milojevicm.tech
     ErrorLog "logs/b17.matura.milojevicm.tech-error.log"
@@ -165,7 +165,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b18.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B18"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B18"
     ServerName b18.matura.milojevicm.tech
     ServerAlias b18.matura.milojevicm.tech
     ErrorLog "logs/b18.matura.milojevicm.tech-error.log"
@@ -174,7 +174,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b19.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B19"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B19"
     ServerName b19.matura.milojevicm.tech
     ServerAlias b19.matura.milojevicm.tech
     ErrorLog "logs/b19.matura.milojevicm.tech-error.log"
@@ -184,7 +184,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b20.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B20"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B20"
     ServerName b20.matura.milojevicm.tech
     ServerAlias b20.matura.milojevicm.tech
     ErrorLog "logs/b20.matura.milojevicm.tech-error.log"
@@ -193,7 +193,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b21.matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B21"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B21"
     ServerName b21.matura.milojevicm.tech
     ServerAlias b21.matura.milojevicm.tech
     ErrorLog "logs/b21.matura.milojevicm.tech-error.log"
@@ -202,7 +202,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@b.22matura.milojevicm.tech
-    DocumentRoot "C:/xampp/htdocs/Matura/B22"
+    DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B22"
     ServerName b.22matura.milojevicm.tech
     ServerAlias b.22matura.milojevicm.tech
     ErrorLog "logs/b.22matura.milojevicm.tech-error.log"
