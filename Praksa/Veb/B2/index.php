@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pocetna.css">
-    <title>B1 - Domaće životinje</title>
+    <title>B2 - Domaće životinje</title>
 </head>
 <body>
     <header>
@@ -24,6 +24,21 @@
         <div class="image"><img src="./slike/pile.jpg" alt="Pile" id="kokoska"></div>
         <div class="image"><img src="./slike/krava.jpg" alt="Krava" id="krava"></div>
     </main>
+    <audio id="audio-pas"  muted="muted">
+        <source src="./audio/pas.wav"></source>
+    </audio>
+    <audio id="audio-patka" muted="muted">
+        <source src="./audio/patka.wav"></source>
+    </audio>
+    <audio id="audio-macka" muted="muted">
+        <source src="./audio/macka.wav"></source>
+    </audio>
+    <audio id="audio-kokoska" muted="muted">
+        <source src="./audio/kokoska.wav"></source>
+    </audio>
+    <audio id="audio-krava" muted="muted">
+        <source src="./audio/krava.wav"></source>
+    </audio>
 <?php 
 require "./components/footer.php";
 ?>

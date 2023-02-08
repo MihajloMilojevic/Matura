@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/uputstva.css">
-    <title>B1 - Domaće životinje | Uputstvo</title>
+    <title>B2 - Domaće životinje | Uputstvo</title>
 </head>
 <body>
     <header>
@@ -21,9 +21,9 @@
         <section>
             <h2>Početna</h2>
             <p>
-                Na početnoj stranici možete videti galeriju slika. <br>
-                Galerija se sastoji iz jedne centralne slike, sa svojim opisom iznad nje i 10 malih slika ispod. <br>
-                Klikom na jednu od malih slika postavljate je za centralnu te će ona zameniti trenutnu centralnu sliku i njen opis svojim.
+                Na početnoj stranici možete videti slike 5 domaćih životinja (pas, patka, mačka, kokoska, krava)<br>
+                Klikom na bilo koju sliku otvoriće se prozor sa nazivom i opisom te životinje. <br>
+                Prelaskom miša preko slike čućete zvuk koji ta životinja pravi (ne radi).
             </p>
         </section>
         <section>

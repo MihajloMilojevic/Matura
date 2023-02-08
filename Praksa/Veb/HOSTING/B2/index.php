@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pocetna.css">
-    <title>B1 - Domaće životinje</title>
+    <title>B2 - Domaće životinje</title>
 </head>
 <body>
     <header>

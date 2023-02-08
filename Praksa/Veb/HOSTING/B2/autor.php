@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/autor.css">
-    <title>B1 - Domaće životinje | Autor</title>
+    <title>B2 - Domaće životinje | Autor</title>
 </head>
 <body>
     <header>

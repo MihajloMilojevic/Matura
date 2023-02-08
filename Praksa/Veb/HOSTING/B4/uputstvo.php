@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/uputstva.css">
-    <title>B2 - Domaće životinje | Uputstvo</title>
+    <title>B4 - Osnovna škola "Sonja Marinković" | Uputstvo</title>
 </head>
 <body>
     <header>
-        <h1>Domaće životinje - Uputstvo</h1>
+        <h1>Osnovna škola "Sonja Marinković" - Uputstvo</h1>
         <?php 
             $url = "uputstvo";
             require "./components/nav.php";
@@ -21,9 +21,9 @@
         <section>
             <h2>Početna</h2>
             <p>
-                Na početnoj stranici možete videti slike 5 domaćih životinja (pas, patka, mačka, kokoska, krava)<br>
-                Klikom na bilo koju sliku otvoriće se prozor sa nazivom i opisom te životinje. <br>
-                Prelaskom miša preko slike čućete zvuk koji ta životinja pravi (ne radi).
+                Na početnoj stranici možete videti nekoliko Pikasovih slika. <br>
+                Pored svake slike nalazi se ime slike, godina kada je naslikana i kratak opis same. <br>
+                Slike se smenjuju svake 3 sekunde, a prateći indikatore ispod slike možete videti koja slika je trenutno prikazana.
             </p>
         </section>
         <section>
@@ -35,7 +35,7 @@
             <p>Na stranici uputstvo možete videti uputstva aplikacije.</p>
         </section>
     </main>
-<?php 
+<?php
 require "./components/footer.php";
 ?>
 </body>

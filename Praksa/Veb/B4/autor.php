@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/autor.css">
-    <title>B2 - Domaće životinje | Autor</title>
+    <title>B4 - Osnovna škola "Sonja Marinković" | Autor</title>
 </head>
 <body>
     <header>
-        <h1>Domaće životinje - Autor</h1>
+        <h1>Osnovna škola "Sonja Marinković" - Autor</h1>
         <?php 
             $url = "autor";
             require "./components/nav.php";
@@ -33,7 +33,7 @@
             <a href="https://github.com/MihajloMilojevic"><i class="fa fa-github" style="font-size:24px"></i><span>MihajloMilojevic</span></a>
         </div>
     </main>
-<?php 
+<?php
 require "./components/footer.php";
 ?>
 </body>
