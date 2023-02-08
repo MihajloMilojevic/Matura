@@ -1,0 +1,19 @@
+main {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 3rem;
+	color: #fcfba1;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+h2 {
+	font-size: 28px;
+}

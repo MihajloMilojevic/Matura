@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+	position: relative;
+	padding-bottom: 3rem;
+	background-color: #641835;
+}
+h1 {
+    color: #fcfba1;
+    padding: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+nav {
+	background-color: #fcfba1;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+	align-items: center;
+	color: #3c1826;
+}
+
+.links {
+	display: flex;
+}
+
+.link {
+	padding: 1rem 2rem;
+	height: 100%;
+}
+.link:nth-child(2) {
+	border-right: 1px solid #3c1826;
+	border-left: 1px solid #3c1826;
+}
+.link.active {
+	background-color: #3c1826;
+	color: #fcfba1;
+}
+
+.zavrsni-ispit {
+	padding: 1rem;
+
+}
+footer {
+	width: 100%;
+	background-color: #3c1826;
+	padding: 1rem;
+	text-align: center;
+	color: #fcfba1;
+	position: absolute;
+	bottom: 0;
+}

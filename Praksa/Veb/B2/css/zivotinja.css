@@ -1,0 +1,12 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+}
+h1 {
+    text-align: center;
+    color: #3c1826;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
