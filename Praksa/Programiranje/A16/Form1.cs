@@ -131,5 +131,53 @@ namespace A16
                 konekcija.Close();
             }
         }
+
+        private void prikaziBTN_Click(object sender, EventArgs e)
+        {
+            string selectovanaIzlozba = statistikaIzlozbaCB.Text;
+            if (selectovanaIzlozba == "")
+            {
+                MessageBox.Show("Prvo odaberite izložbu");
+                return;
+            }
+            string izlozbaId = selectovanaIzlozba.Split('-')[0];
+            Konkcija();
+            komanda.CommandText = @"SELECT K.id_kategorije AS ""Šifra"", k.naziv as ""Naziv kategorije"", COUNT(R.rezultat) as ""Broj pasa"" FROM KATEGORIJA k INNER join rezultat r on r.id_kategorije = k.id_kategorije WHERE R.id_izlozbe =  @izlozbaId GROUP BY K.id_kategorije, k.naziv ORDER BY K.id_kategorije";
+            komanda.Parameters.AddWithValue("@izlozbaId", izlozbaId);
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            dataGridView1.DataSource = tabela;
+
+            chart1.Series["rezultat"].IsValueShownAsLabel = true;
+            chart1.Series["rezultat"].Points.Clear();
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                DataRow row = tabela.Rows[i];
+                chart1.Series["rezultat"].Points.AddXY(row[1].ToString(), row[2].ToString());
+            }
+
+            chart1.Visible = true;
+        }
+
+        private void statistikaIzlozbaCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectovanaIzlozba = statistikaIzlozbaCB.Text;
+            if (selectovanaIzlozba == "")
+            {
+                MessageBox.Show("Prvo odaberite izložbu");
+                return;
+            }
+            string izlozbaId = selectovanaIzlozba.Split('-')[0];
+            Konkcija();
+            komanda.CommandText = "SELECT COUNT(*) as prijavljeni, COUNT(rezultat) as ucestvovali from rezultat where id_izlozbe = @izlozbaId";
+            komanda.Parameters.AddWithValue("@izlozbaId", izlozbaId);
+            Clear();
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            string prijavljeni = tabela.Rows[0][0].ToString();
+            string ucestvovali = tabela.Rows[0][1].ToString();
+            statistikaPrijavljenoLB.Text = prijavljeni;
+            statistikaUcestvovaloLB.Text = ucestvovali;
+        }
     }
 }
