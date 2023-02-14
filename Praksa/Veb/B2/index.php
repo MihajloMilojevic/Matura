@@ -25,19 +25,19 @@
         <div class="image"><img src="./slike/krava.jpg" alt="Krava" id="krava"></div>
     </main>
     <audio id="audio-pas"  muted="muted">
-        <source src="./audio/pas.wav"></source>
+        <source src="./audio/pas.mp3"></source>
     </audio>
     <audio id="audio-patka" muted="muted">
-        <source src="./audio/patka.wav"></source>
+        <source src="./audio/patka.mp3"></source>
     </audio>
     <audio id="audio-macka" muted="muted">
-        <source src="./audio/macka.wav"></source>
+        <source src="./audio/macka.mp3"></source>
     </audio>
     <audio id="audio-kokoska" muted="muted">
-        <source src="./audio/kokoska.wav"></source>
+        <source src="./audio/kokoska.mp3"></source>
     </audio>
     <audio id="audio-krava" muted="muted">
-        <source src="./audio/krava.wav"></source>
+        <source src="./audio/krava.mp3"></source>
     </audio>
 <?php 
 require "./components/footer.php";

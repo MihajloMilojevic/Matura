@@ -4,6 +4,6 @@ Array.from(document.querySelectorAll(".image img")).forEach(img => {
 	})
 	img.addEventListener("mouseover", () => {
 		document.getElementById("audio-"+img.id).play();
-		new Audio(`../audio/${img.id}.wav`).play();
+		new Audio(`../audio/${img.id}.mp3`).play();
 	})
 })

@@ -3,6 +3,7 @@ Array.from(document.querySelectorAll(".image img")).forEach(img => {
 		window.open("/zivotinja.php?zivotinja=" + img.id, `Domaće životinje | ${img.id}`, `width=500,height=300,left=100,top=100,menubar=no,toolbar=no`)
 	})
 	img.addEventListener("mouseover", () => {
-		new Audio(`/B2/audio/${img.id}.wav`).play();
+		document.getElementById("audio-"+img.id).play();
+		new Audio(`/B2/audio/${img.id}.mp3`).play();
 	})
 })
