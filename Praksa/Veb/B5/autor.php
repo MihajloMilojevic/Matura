@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/autor.css">
-    <title>B3 - Osnovna škola "Sonja Marinković" | Autor</title>
+    <title>B5 - Osnovna škola "Sonja Marinković" | Autor</title>
 </head>
 <body>
     <header>

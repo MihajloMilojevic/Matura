@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/uputstva.css">
-    <title>B3 - Osnovna škola "Sonja Marinković" | Uputstvo</title>
+    <title>B5 - Osnovna škola "Sonja Marinković" | Uputstvo</title>
 </head>
 <body>
     <header>
