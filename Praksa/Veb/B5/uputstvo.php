@@ -21,10 +21,10 @@
         <section>
             <h2>Početna</h2>
             <p>
-                Na početnoj stranici možete videti kartu srbije sa njenim susedima. <br>
-                Na teritoriji svake od država nalazi se zastava i naziv države. <br>
-                Klikom na zastavu ili naziv države otvara se prozor sa osnovnim podacima države. <br>
-                Prelaskom miša preko zastave države pušta se himna te zemlje.
+                Na početnoj stranici možete videti tabelu sa nekoliko insturmenata. <br>
+                Klikom na sliku instrumenta otvara se prozor sa osnovnim podacima o instrumentu sa Wikipedije. <br>
+                Klikom na "Saznaj više" otvara se prozor sa osnovnim podacima grupe kojoj taj instrument pripada. <br>
+                Prelaskom miša preko slike zvučnika pušta se zvuk tog instrumenta.
             </p>
         </section>
         <section>

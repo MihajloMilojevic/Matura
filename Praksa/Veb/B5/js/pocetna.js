@@ -8,11 +8,14 @@ const wikiLinks = {
 }
 
 Array.from(document.querySelectorAll(".instrument img")).forEach(inst => {
-	// zas.addEventListener("mouseenter", () => document.getElementById(`audio-${zas.id}`)?.play())
-	// zas.addEventListener("mouseleave", () => {const audio = document.getElementById(`audio-${zas.id}`); audio.pause(); audio.currentTime = 0;})
 	inst.addEventListener("click", () => window.open(wikiLinks[inst.id], "_blank"));
 })
 
 Array.from(document.querySelectorAll(".saznaj-vise")).forEach(link => {
 	link.addEventListener("click", e => {e.preventDefault(); window.open(link.href, "Instrumenti", `width=500,height=300,left=100,top=100,menubar=no,toolbar=no`)})
+})
+
+Array.from(document.querySelectorAll(`[alt="zvucnik"]`)).forEach(zv => {
+	zv.addEventListener("mouseenter", () => document.getElementById(`audio-${zv.id.split("-")[0]}`)?.play())
+	zv.addEventListener("mouseleave", () => {const audio = document.getElementById(`audio-${zv.id.split("-")[0]}`); audio.pause(); audio.currentTime = 0;})
 })
