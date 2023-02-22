@@ -23,10 +23,14 @@
 	);
 
 	if(empty($_GET["zivotinja"])) {
-		header("location: /B2");
+		header("location: /");
 		exit(0);
 	}
 	$zivotinja = $zivotinje[$_GET["zivotinja"]];
+	if(empty($zivotinja)) {
+		header("location: /");
+		exit(0);
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
