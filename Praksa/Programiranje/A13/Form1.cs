@@ -95,5 +95,19 @@ namespace A13
         {
             this.Close();
         }
+
+        private void oAplikacijiMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new OAplikaciji().ShowDialog();
+            this.Visible = true;
+        }
+
+        private void analizaMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new Analiza().ShowDialog();
+            this.Visible = true;
+        }
     }
 }

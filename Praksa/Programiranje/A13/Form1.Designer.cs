@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.izmeniMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.analizaMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,20 +80,22 @@
             this.analizaMenuItem.Image = global::A13.Properties.Resources.analiza;
             this.analizaMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.analizaMenuItem.Name = "analizaMenuItem";
-            this.analizaMenuItem.Size = new System.Drawing.Size(82, 84);
+            this.analizaMenuItem.Size = new System.Drawing.Size(115, 84);
             this.analizaMenuItem.Text = "Analiza";
             this.analizaMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.analizaMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.analizaMenuItem.Click += new System.EventHandler(this.analizaMenuItem_Click);
             // 
             // oAplikacijiMenuItem
             // 
             this.oAplikacijiMenuItem.Image = global::A13.Properties.Resources.o_aplikaciji;
             this.oAplikacijiMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.oAplikacijiMenuItem.Name = "oAplikacijiMenuItem";
-            this.oAplikacijiMenuItem.Size = new System.Drawing.Size(82, 94);
+            this.oAplikacijiMenuItem.Size = new System.Drawing.Size(115, 94);
             this.oAplikacijiMenuItem.Text = "O Aplikaciji";
             this.oAplikacijiMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.oAplikacijiMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.oAplikacijiMenuItem.Click += new System.EventHandler(this.oAplikacijiMenuItem_Click);
             // 
             // izlazMenuItem
             // 
@@ -222,6 +225,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;

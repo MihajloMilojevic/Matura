@@ -10,3 +10,4 @@ C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A13
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A13\obj\Debug\A13.exe
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A13\obj\Debug\A13.pdb
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A13\obj\Debug\A13.OAplikaciji.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A13\obj\Debug\A13.Analiza.resources
