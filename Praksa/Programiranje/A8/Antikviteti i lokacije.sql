@@ -1,0 +1,496 @@
+CREATE TABLE PERIODI
+( 
+periodID INT PRIMARY KEY,
+period NVARCHAR(50) NOT NULL,
+opis NVARCHAR(150) NOT NULL,
+)
+
+
+CREATE TABLE TIPOVI_ANTIKVITETA
+(
+tipAntikvitetaID INT PRIMARY KEY,
+tip NVARCHAR(50) NOT NULL,
+slika varbinary(max)
+)
+
+CREATE TABLE ARHEOLOZI
+( 
+arheologID INT PRIMARY KEY,
+ime NVARCHAR(20) NOT NULL,
+prezime NVARCHAR(20) NOT NULL,
+datum_rodjenja DATE NOT NULL,
+mejl NVARCHAR(50) NOT NULL,
+adresa NVARCHAR(50)NOT NULL
+)
+
+CREATE TABLE DRZAVE
+( 
+drzavaID INT PRIMARY KEY,
+naziv_drzave NVARCHAR(25) NOT NULL,
+pozivni_br_Drzave NVARCHAR(3) NOT NULL,
+br_Stanovnika_Drzave INT NOT NULL
+)
+
+
+CREATE TABLE GRADOVI
+(
+gradID INT PRIMARY KEY,
+ime_grada NVARCHAR(30) NOT NULL,
+pozivni_broj NVARCHAR(3) NOT NULL,
+postanski_broj INT NOT NULL,
+broj_stanovnika INT NOT NULL,
+drzavaID INT FOREIGN KEY REFERENCES DRZAVE(drzavaID)
+)
+
+CREATE TABLE LOKALITETI
+(
+lokalitetID INT PRIMARY KEY,
+naziv NVARCHAR(50) NOT NULL,
+koordinate_duzina NVARCHAR(50) NOT NULL,
+koordinate_sirina NVARCHAR(50) NOT NULL,
+gradID  INT NOT NULL REFERENCES GRADOVI(gradID),
+)
+
+CREATE TABLE ANTIKVITETI
+( 
+antikvitetID INT PRIMARY KEY,
+periodID INT NOT NULL REFERENCES PERIODI(periodID),
+tipAntikvitetaID INT NOT NULL REFERENCES TIPOVI_ANTIKVITETA(tipAntikvitetaID),
+lokalitetID INT NOT NULL REFERENCES LOKALITETI(lokalitetID),
+arheologID INT NOT NULL REFERENCES ARHEOLOZI(arheologID),
+datum_pronalaska DATE NOT NULL,
+vreme_pronalaska TIME NOT NULL
+)
+
+
+INSERT INTO PERIODI
+VALUES (1,'Bronzano doba','')
+
+INSERT INTO PERIODI
+VALUES (2,'Gvozdeno doba','')
+
+INSERT INTO PERIODI
+VALUES (3,'Eneolit','')
+
+INSERT INTO PERIODI
+VALUES (4,'Praistorija','')
+
+INSERT INTO PERIODI
+VALUES (5,'Rimska arheologija','')
+
+INSERT INTO PERIODI
+VALUES (6,'Mezolit','')
+
+INSERT INTO PERIODI
+VALUES (7,'Neolit','')
+
+INSERT INTO PERIODI
+VALUES (8,'Paleolit','')
+
+INSERT INTO PERIODI
+VALUES (9,'Rani srednji vek','')
+
+INSERT INTO PERIODI
+VALUES (10,'Srednji vek','')
+
+INSERT INTO PERIODI
+VALUES (11,'Kasni srednji vek','')
+
+INSERT INTO PERIODI
+VALUES (25,'Bakarno doba','')
+
+INSERT INTO PERIODI
+VALUES (29,'19. vek','')
+
+INSERT INTO PERIODI
+VALUES (36,'20. vek','')
+
+INSERT INTO PERIODI
+VALUES (632,'Jura','')
+
+
+
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (1,'Vaza',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (2,'Bista',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (3,'Nož',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (4,'Mač',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (5,'Amfora',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (6,'Prsten',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (7,'Fosili',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (8,'Pehar',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (9,'Pojas',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (10,'Koplje',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (11,'Sarkofag',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (12,'Novac',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (13,'Tanjir',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (14,'Viljuška',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (15,'Mauzolej',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (16,'Maska',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (17,'Pečat',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (18,'Čizme',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (19,'Skulptura',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (20,'Štap',NULL)
+
+INSERT INTO TIPOVI_ANTIKVITETA
+VALUES (21,'Sekira',NULL)
+
+
+INSERT INTO ARHEOLOZI
+VALUES (1,'Stefan','Djokic',convert(date,'05.10.1996'),'stefan@gmail.com', 'Kraljevo')
+
+INSERT INTO ARHEOLOZI
+VALUES (2,'Jovana','Djurovic',convert(date,'06.11.1975'),'apokalipso.jovana@gmail.com', 'Beograd')
+
+INSERT INTO ARHEOLOZI
+VALUES (3,'Nenad','Gligorijević',convert(date,'07.04.1982'),'nesheks@gmail.com', 'Novi Sad')
+
+INSERT INTO ARHEOLOZI
+VALUES (4,'Dragoljub','Putnik',convert(date,'03.18.1956'),'dragi@hotmail.com', 'Beograd')
+
+INSERT INTO ARHEOLOZI
+VALUES (5,'Dragana','Leković',convert(date,'12.8.1969'),'draganalek@gmail.com', 'Niš')
+
+INSERT INTO ARHEOLOZI
+VALUES (6,'Bogdan','Antić',convert(date,'11.07.1971'),'bogdantic@live.com', 'Kraljevo')
+
+INSERT INTO ARHEOLOZI
+VALUES (7,'Uros','Petković',convert(date,'06.23.1982'),'uros.p@gmail.com', 'Novi Sad')
+
+INSERT INTO ARHEOLOZI
+VALUES (8,'Leposava','Marković',convert(date,'11.14.1963'),'lepava@outlook.com', 'Kragujevac')
+
+
+INSERT INTO ARHEOLOZI
+VALUES (9,'Petar','Despotović',convert(date,'08.15.1978'),'pera78@gmail.com', 'Beograd')
+
+INSERT INTO ARHEOLOZI
+VALUES (10,'Miroslav','Jovanović',convert(date,'02.04.1972'),'mirojova@gmail.com', 'Kraljevo')
+
+INSERT INTO ARHEOLOZI
+VALUES (11,'Bojana','Stamenković',convert(date,'04.14.1983'),'boka83@hotmail.rs', 'Subotica')
+
+
+
+INSERT INTO ARHEOLOZI
+VALUES (12,'Bogdana','Momirović',convert(date,'07.18.1953'),'bogdana1953@hotmail.rs', 'Beograd')
+
+
+INSERT INTO ARHEOLOZI
+VALUES (13,'Lazar','Hajduković',convert(date,'04.14.1962'),'lazar.hajdukovic@hotmail.rs', 'Šabac')
+
+
+INSERT INTO ARHEOLOZI
+VALUES (14,'Slavica','Počuča',convert(date,'11.24.1973'),'slavica1973@hotmail.rs', 'Novi Sad')
+
+
+INSERT INTO ARHEOLOZI
+VALUES (15,'Nenad','Uskoković',convert(date,'09.30.1967'),'nesauskok1967@hotmail.rs', 'Užice')
+
+
+INSERT INTO DRZAVE
+VALUES(1,'Srbija',381,6930000)
+
+INSERT INTO DRZAVE
+VALUES(2,'Severna Makedonija',389,2103700)
+
+INSERT INTO DRZAVE
+VALUES(3,'Crna Gora',382,621718)
+
+INSERT INTO DRZAVE
+VALUES(4,'Bugarska',359,6951482)
+
+INSERT INTO DRZAVE
+VALUES(5,'Rumunija',40,19590000)
+
+
+INSERT INTO GRADOVI
+VALUES(1,'Leskovac','016',16000,144206,1)
+
+INSERT INTO GRADOVI
+VALUES(2,'Aleksandrovac','037',37230,26522,1)
+
+INSERT INTO GRADOVI
+VALUES(3,'Niš','018',18000, 185987,1)
+
+INSERT INTO GRADOVI
+VALUES(4,'Vinča','011',11351,6779,1)
+
+INSERT INTO GRADOVI
+VALUES(5,'Kraljevo','036',36000,67142,1)
+
+INSERT INTO GRADOVI
+VALUES(6,'Donji Milanovac','030',19220,2410,1)
+
+INSERT INTO GRADOVI
+VALUES(7,'Požarevac','012',12000,44183,1)
+
+INSERT INTO GRADOVI
+VALUES(8,'Zaječar','019',19000,18151,1)
+
+INSERT INTO GRADOVI
+VALUES(9,'Kladovo','019',19320,20635,1)
+
+INSERT INTO GRADOVI
+VALUES(10,'Beograd','011',11000,1374232,1)
+
+INSERT INTO GRADOVI
+VALUES(11,'Aleksinac','018',18220,16685,1)
+
+INSERT INTO GRADOVI
+VALUES(12,'Novi Beograd','011',11000,1374232,1)
+
+INSERT INTO GRADOVI
+VALUES(13,'Mladenovac','011',11400,53050,1)
+
+INSERT INTO GRADOVI
+VALUES(14,'Batočina','034',34227,5804,1)
+
+INSERT INTO GRADOVI
+VALUES(15,'Lebane','016',16230,20333,1)
+
+INSERT INTO GRADOVI
+VALUES(16,'Aranđelovac','034',34300,24797,1)
+
+INSERT INTO GRADOVI
+VALUES(17,'Kostolac','012',12000,9569,1)
+
+INSERT INTO GRADOVI
+VALUES(18,'Sremska Mitrovica','022',22000,37751,1)
+
+INSERT INTO GRADOVI
+VALUES(19,'Zemun','011',11080,180000,1)
+
+INSERT INTO GRADOVI
+VALUES(20,'Grocka','011',11306,8441,1)
+
+INSERT INTO GRADOVI
+VALUES(21,'Valjevo','014',14000,59073,1)
+
+INSERT INTO GRADOVI
+VALUES(22,'Bor','030',19210,34160,1)
+
+INSERT INTO GRADOVI
+VALUES(23,'Bajina Bašta','031',31250,9148,1)
+
+INSERT INTO GRADOVI
+VALUES(24,'Prijepolje','033',31303,13330,1)
+
+INSERT INTO GRADOVI
+VALUES(25,'Prokuplje','027',18400,27333,1)
+
+INSERT INTO GRADOVI
+VALUES(26,'Ljubovija','015',15320,3929,1)
+
+
+INSERT INTO LOKALITETI
+VALUES (1,'21 zapadno','44 severno','Caričin grad',15)
+
+INSERT INTO LOKALITETI
+VALUES (2,'20 istočno','43 južno','Koznik',2)
+
+INSERT INTO LOKALITETI
+VALUES (3,'23 istočno','42 južno','Medijana',3)
+
+INSERT INTO LOKALITETI
+VALUES (4,'21  zapadno','45 južno','Vinča',4)
+
+INSERT INTO LOKALITETI
+VALUES (5,'20 zapadno','43 severno','Maglič',5)
+
+INSERT INTO LOKALITETI
+VALUES (6,'12 zapadno','39 južno','Madzarsko groblje',16)
+
+INSERT INTO LOKALITETI
+VALUES (7,'11 istočno','16 severno','Lepenski Vir',6)
+
+
+INSERT INTO LOKALITETI
+VALUES (8,'22 istočno','45 severno','Viminacijum',16)
+
+INSERT INTO LOKALITETI
+VALUES (9,'34 zapadno','21 južno','Felix Romuliana',8)
+
+INSERT INTO LOKALITETI
+VALUES (10,'36 istočno','43 severno','Tvrđava Dijana',9)
+
+INSERT INTO LOKALITETI
+VALUES (11,'23 istočno','33 severno','Sirmium',18)
+
+INSERT INTO LOKALITETI
+VALUES (12,'24 zapadno','38 severno','Taurunum',19)
+
+INSERT INTO LOKALITETI
+VALUES (13,'12 zapadno','29 južno','Lokalitet Beli Breg',20)
+
+INSERT INTO LOKALITETI
+VALUES (14,'23 zapadno','47 severno','Singidunum',10)
+
+INSERT INTO LOKALITETI
+VALUES (15,'33 istočno','17 severno','Crkvine',13)
+
+INSERT INTO LOKALITETI
+VALUES (16,'39 zapadno','49 južno','Pećina Gradac',14)
+
+INSERT INTO LOKALITETI
+VALUES (17,'17 zapadno','25 severno','Pećina Risovača',16)
+
+INSERT INTO LOKALITETI
+VALUES (18,'22 zapadno','27 južno','Jerinin grad',21)
+
+INSERT INTO LOKALITETI
+VALUES (19,'26 zapadno','31 severno','Lazareva pećina',22)
+
+INSERT INTO LOKALITETI
+VALUES (20,'36 zapadno','9 južno','Mramorje Perućac',23)
+
+INSERT INTO LOKALITETI
+VALUES (21,'42 istočno','18 severno','Rimska nekropola',24)
+
+INSERT INTO LOKALITETI
+VALUES (22,'47 istočno','13 severno','Gamzigrad',8)
+
+INSERT INTO LOKALITETI
+VALUES (23,'17 zapadno','39 južno','Gradac',1)
+
+INSERT INTO LOKALITETI
+VALUES (24,'16 istočno','21 severno','Petnička pećina',21)
+
+INSERT INTO LOKALITETI
+VALUES (25,'35 istočno','26 severno','Karataš',9)
+
+INSERT INTO LOKALITETI
+VALUES (26,'29 istočno','15 južno','Hisar',1)
+
+INSERT INTO LOKALITETI
+VALUES (27,'37 istočno','19 južno','Pločnik',25)
+
+INSERT INTO LOKALITETI
+VALUES (28,'46 istočno','23 južno','Soko Grad',26)
+
+
+INSERT INTO ANTIKVITETI
+VALUES (1,1,2,5,1,convert(date,'05.12.1983'),'13:30')
+
+INSERT INTO ANTIKVITETI
+VALUES (2,3,3,11,3, convert(date,'04.18.2015'),'11:21' )
+
+INSERT INTO ANTIKVITETI
+VALUES (3,4,4,19,3,convert(date,'04.09.2015'),'09:53' )
+
+INSERT INTO ANTIKVITETI
+VALUES (4,3,5,23,12,convert(date,'02.14.2014'),'17:35'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (5,2,1,19,1,convert(date,'04.03.2017'),'12:40'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (6,6,2,19,12,convert(date,'03.02.2018'),'08:40' )
+
+INSERT INTO ANTIKVITETI
+VALUES (7,11,6,23,9,convert(date,'12.14.2017'),'12:20'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (8,3,3,5,3,convert(date,'05.12.2016'),'15:20' )
+
+INSERT INTO ANTIKVITETI
+VALUES (9,5,10,14,5,convert(date,'07.23.2017'),'18:10' )
+
+INSERT INTO ANTIKVITETI
+VALUES (10,9,4,14,11,convert(date,'07.14.2017'),'09:20'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (11,10,7,19,5,convert(date,'01.08.2015'),'13:30' )
+
+INSERT INTO ANTIKVITETI
+VALUES (12,6,6,23,1,convert(date,'05.12.2017'),'11:55'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (13,11,3,5,3,convert(date,'05.13.2017'),'14:45' )
+
+INSERT INTO ANTIKVITETI
+VALUES (14,8,7,1,12,convert(date,'05.13.2015'),'19:40' )
+
+INSERT INTO ANTIKVITETI
+VALUES (15,10,4,23,5,convert(date,'05.12.2015'),'08:20'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (16,11,6,11,7,convert(date,'04.05.2014'),'14:50' )
+
+INSERT INTO ANTIKVITETI
+VALUES (17,2,12,1,5,convert(date,'09.11.2014'),'10:35'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (18,7,11,5,12,convert(date,'06.12.2015'),'12:10'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (19,3,4,19,5,convert(date,'02.08.2015'),'06:30' )
+
+INSERT INTO ANTIKVITETI
+VALUES (20,11,12,23,8,convert(date,'05.02.2017'),'11:50' )
+
+INSERT INTO ANTIKVITETI
+VALUES (22,29,12,28,9,convert(date,'08.11.2017'),'18:40' )
+
+INSERT INTO ANTIKVITETI
+VALUES (25,36,16,11,2,convert(date,'07.23.2017'),'15:35'  )
+
+INSERT INTO ANTIKVITETI
+VALUES (27,4,10,5,1,convert(date,'09.28.2017'),'17:20' )
+
+INSERT INTO ANTIKVITETI
+VALUES (28,9,6,28,7,convert(date,'10.09.2019'),'12:38' )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
