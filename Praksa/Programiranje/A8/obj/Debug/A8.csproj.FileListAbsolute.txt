@@ -12,3 +12,17 @@ C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A8\
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A8\obj\Debug\A8.pdb
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Analiza.resources
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Prikaz.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\bin\Debug\A8.exe.config
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\bin\Debug\A8.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\bin\Debug\A8.pdb
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Analiza.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Form1.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.O_Aplikaciji.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Prikaz.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.Properties.Resources.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.csproj.GenerateResource.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A8\obj\Debug\A8.pdb
