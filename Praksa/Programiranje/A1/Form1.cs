@@ -145,11 +145,11 @@ namespace A1
                 Konekcija();
                 konekcija.Open();
                 komanda.CommandText = "INSERT INTO Citalac (CitalacID, Maticni_broj, Ime, Prezime, Adresa) VALUES(@CitalacID, @Maticni_broj, @Ime, @Prezime, @Adresa)";
-                komanda.Parameters.Add("@CitalacID", brojTB.Text);
-                komanda.Parameters.Add("@Maticni_broj", jmbgTB.Text);
-                komanda.Parameters.Add("@Ime", imeTB.Text);
-                komanda.Parameters.Add("@Prezime", prezimeTB.Text);
-                komanda.Parameters.Add("@Adresa", AdresaTB.Text);
+                komanda.Parameters.AddWithValue("@CitalacID", brojTB.Text);
+                komanda.Parameters.AddWithValue("@Maticni_broj", jmbgTB.Text);
+                komanda.Parameters.AddWithValue("@Ime", imeTB.Text);
+                komanda.Parameters.AddWithValue("@Prezime", prezimeTB.Text);
+                komanda.Parameters.AddWithValue("@Adresa", AdresaTB.Text);
                 komanda.ExecuteNonQuery();
                 konekcija.Close();
                 GetData();
