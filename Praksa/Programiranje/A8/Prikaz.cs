@@ -51,15 +51,19 @@ namespace A8
         {
             sifraLB.Text = tabela.Rows[trenutna][0].ToString();
             imeTB.Text = tabela.Rows[trenutna][1].ToString();
+            // ako je slika u bazi NULL 
             if (tabela.Rows[trenutna][2] == DBNull.Value) 
             {
+                // postavi sliku na defaultnu no_image.jpg
                 slikaPB.Image = Image.FromFile(NO_IMAGE);
-                slikaPB.Tag =NO_IMAGE;
+                slikaPB.Tag =NO_IMAGE; // u tag postavi putanju do slike
+                // tag cuva podatke o slici, tipa je object pa moze bilo sta, a ne utiče na rad tekstboksa
             }
             else
             {
+                // postavi sliku na sliku u bazi
                 slikaPB.Image = Image.FromFile(tabela.Rows[trenutna][2].ToString());
-                slikaPB.Tag = tabela.Rows[trenutna][2].ToString();
+                slikaPB.Tag = tabela.Rows[trenutna][2].ToString(); // sacuvaj putanju u tag
             }
             nazadBTN.Enabled = (trenutna > 0);
             napredBTN.Enabled = (trenutna < tabela.Rows.Count - 1);
@@ -83,10 +87,11 @@ namespace A8
             DialogResult res = fd.ShowDialog(); 
             if(res == DialogResult.OK)
             {
+                // ako je ok u picture box ubaci sliku koju je korisnik izabrao iz antikviteti foldera
                 slikaPB.Image = Image.FromFile("antikviteti\\" + fd.SafeFileName);
-                slikaPB.Tag = "antikviteti\\" + fd.SafeFileName;
+                slikaPB.Tag = "antikviteti\\" + fd.SafeFileName; // sačuvaj putanju u tag
             }
-            else if(res == DialogResult.Cancel)
+            else if(res == DialogResult.Cancel) // ako je cancelovao izbaci sliku i ubaci no_image
             {
                 slikaPB.Image = Image.FromFile(NO_IMAGE);
                 slikaPB.Tag = NO_IMAGE;
@@ -95,15 +100,17 @@ namespace A8
 
         private void sacuvajBTN_Click(object sender, EventArgs e)
         {
+            // putanja slike se nalazi u tagu pictureBox-a
             string slika = slikaPB.Tag.ToString();
             string ime = imeTB.Text;
             konekcija.Open();
             try {
                 komanda.CommandText = "UPDATE TIPOVI_ANTIKVITETA SET tip = @TIP, slika = @SLIKA WHERE tipAntikvitetaID = @ID";
                 komanda.Parameters.AddWithValue("@TIP", ime);
+                //ako je putanja slike jednaka putanji defaultne no_image u bazu ubaci NULL
                 if (slika == NO_IMAGE)
                     komanda.Parameters.AddWithValue("@SLIKA", DBNull.Value);
-                else
+                else // u suprotnom ubaciti tu putanju
                     komanda.Parameters.AddWithValue("@SLIKA", slika);
                 komanda.Parameters.AddWithValue("@ID", tabela.Rows[trenutna][0]);
                 komanda.ExecuteNonQuery();
