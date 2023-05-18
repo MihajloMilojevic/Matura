@@ -101,10 +101,10 @@
             this.citaociTab.Controls.Add(this.label3);
             this.citaociTab.Controls.Add(this.label2);
             this.citaociTab.Controls.Add(this.label1);
-            this.citaociTab.Location = new System.Drawing.Point(4, 33);
+            this.citaociTab.Location = new System.Drawing.Point(4, 38);
             this.citaociTab.Name = "citaociTab";
             this.citaociTab.Padding = new System.Windows.Forms.Padding(3);
-            this.citaociTab.Size = new System.Drawing.Size(1126, 362);
+            this.citaociTab.Size = new System.Drawing.Size(1126, 357);
             this.citaociTab.TabIndex = 0;
             this.citaociTab.Text = "Čitaoci";
             this.citaociTab.UseVisualStyleBackColor = true;
@@ -139,7 +139,6 @@
             this.columnHeader4,
             this.columnHeader5});
             this.lista.FullRowSelect = true;
-            this.lista.HideSelection = false;
             this.lista.Location = new System.Drawing.Point(401, 34);
             this.lista.MultiSelect = false;
             this.lista.Name = "lista";
@@ -177,35 +176,35 @@
             // 
             this.AdresaTB.Location = new System.Drawing.Point(138, 198);
             this.AdresaTB.Name = "AdresaTB";
-            this.AdresaTB.Size = new System.Drawing.Size(241, 29);
+            this.AdresaTB.Size = new System.Drawing.Size(241, 34);
             this.AdresaTB.TabIndex = 9;
             // 
             // prezimeTB
             // 
             this.prezimeTB.Location = new System.Drawing.Point(138, 158);
             this.prezimeTB.Name = "prezimeTB";
-            this.prezimeTB.Size = new System.Drawing.Size(241, 29);
+            this.prezimeTB.Size = new System.Drawing.Size(241, 34);
             this.prezimeTB.TabIndex = 8;
             // 
             // imeTB
             // 
             this.imeTB.Location = new System.Drawing.Point(138, 118);
             this.imeTB.Name = "imeTB";
-            this.imeTB.Size = new System.Drawing.Size(241, 29);
+            this.imeTB.Size = new System.Drawing.Size(241, 34);
             this.imeTB.TabIndex = 7;
             // 
             // jmbgTB
             // 
             this.jmbgTB.Location = new System.Drawing.Point(138, 78);
             this.jmbgTB.Name = "jmbgTB";
-            this.jmbgTB.Size = new System.Drawing.Size(241, 29);
+            this.jmbgTB.Size = new System.Drawing.Size(241, 34);
             this.jmbgTB.TabIndex = 6;
             // 
             // brojTB
             // 
             this.brojTB.Location = new System.Drawing.Point(224, 34);
             this.brojTB.Name = "brojTB";
-            this.brojTB.Size = new System.Drawing.Size(155, 29);
+            this.brojTB.Size = new System.Drawing.Size(155, 34);
             this.brojTB.TabIndex = 5;
             this.brojTB.TextChanged += new System.EventHandler(this.brojTB_TextChanged);
             // 
@@ -266,10 +265,10 @@
             this.iznajmljivanjaTab.Controls.Add(this.maxGodNUD);
             this.iznajmljivanjaTab.Controls.Add(this.minGodNUD);
             this.iznajmljivanjaTab.Controls.Add(this.label6);
-            this.iznajmljivanjaTab.Location = new System.Drawing.Point(4, 33);
+            this.iznajmljivanjaTab.Location = new System.Drawing.Point(4, 38);
             this.iznajmljivanjaTab.Name = "iznajmljivanjaTab";
             this.iznajmljivanjaTab.Padding = new System.Windows.Forms.Padding(3);
-            this.iznajmljivanjaTab.Size = new System.Drawing.Size(1126, 362);
+            this.iznajmljivanjaTab.Size = new System.Drawing.Size(1126, 357);
             this.iznajmljivanjaTab.TabIndex = 1;
             this.iznajmljivanjaTab.Text = "Pregled Iznamljivanja";
             this.iznajmljivanjaTab.UseVisualStyleBackColor = true;
@@ -320,6 +319,7 @@
             this.podaciDGV.Name = "podaciDGV";
             this.podaciDGV.ReadOnly = true;
             this.podaciDGV.RowHeadersVisible = false;
+            this.podaciDGV.RowHeadersWidth = 51;
             this.podaciDGV.Size = new System.Drawing.Size(402, 221);
             this.podaciDGV.TabIndex = 6;
             // 
@@ -330,7 +330,7 @@
             this.citalacCb.FormattingEnabled = true;
             this.citalacCb.Location = new System.Drawing.Point(86, 52);
             this.citalacCb.Name = "citalacCb";
-            this.citalacCb.Size = new System.Drawing.Size(335, 32);
+            this.citalacCb.Size = new System.Drawing.Size(335, 37);
             this.citalacCb.TabIndex = 5;
             // 
             // label8
@@ -338,7 +338,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(15, 55);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 24);
+            this.label8.Size = new System.Drawing.Size(86, 29);
             this.label8.TabIndex = 4;
             this.label8.Text = "Čitalac";
             // 
@@ -347,7 +347,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(298, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 24);
+            this.label7.Size = new System.Drawing.Size(41, 29);
             this.label7.TabIndex = 3;
             this.label7.Text = "do";
             // 
@@ -360,7 +360,7 @@
             0,
             0});
             this.maxGodNUD.Name = "maxGodNUD";
-            this.maxGodNUD.Size = new System.Drawing.Size(84, 29);
+            this.maxGodNUD.Size = new System.Drawing.Size(84, 34);
             this.maxGodNUD.TabIndex = 2;
             this.maxGodNUD.Value = new decimal(new int[] {
             2023,
@@ -378,7 +378,7 @@
             0,
             0});
             this.minGodNUD.Name = "minGodNUD";
-            this.minGodNUD.Size = new System.Drawing.Size(84, 29);
+            this.minGodNUD.Size = new System.Drawing.Size(84, 34);
             this.minGodNUD.TabIndex = 1;
             this.minGodNUD.Value = new decimal(new int[] {
             2013,
@@ -392,16 +392,16 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(15, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 24);
+            this.label6.Size = new System.Drawing.Size(237, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Vremenski period od";
             // 
             // oAplikacijiTab
             // 
             this.oAplikacijiTab.Controls.Add(this.textBox1);
-            this.oAplikacijiTab.Location = new System.Drawing.Point(4, 33);
+            this.oAplikacijiTab.Location = new System.Drawing.Point(4, 38);
             this.oAplikacijiTab.Name = "oAplikacijiTab";
-            this.oAplikacijiTab.Size = new System.Drawing.Size(1126, 362);
+            this.oAplikacijiTab.Size = new System.Drawing.Size(1126, 357);
             this.oAplikacijiTab.TabIndex = 2;
             this.oAplikacijiTab.Text = "O Aplikaciji";
             this.oAplikacijiTab.UseVisualStyleBackColor = true;
@@ -412,13 +412,13 @@
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1126, 362);
+            this.textBox1.Size = new System.Drawing.Size(1126, 357);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 399);
             this.Controls.Add(this.tabControl1);
