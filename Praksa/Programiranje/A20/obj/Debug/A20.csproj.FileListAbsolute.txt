@@ -1,0 +1,13 @@
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\bin\Debug\A20.exe.config
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\bin\Debug\A20.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\bin\Debug\A20.pdb
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Form1.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Properties.Resources.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.GenerateResource.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.pdb
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Prikaz.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Uplata.resources
