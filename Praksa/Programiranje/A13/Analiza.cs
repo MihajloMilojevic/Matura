@@ -26,7 +26,7 @@ namespace A13
         public void Konekcija()
         {
             konekcija = new SqlConnection();
-            konekcija.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=M2_A13;Integrated Security=True;";
+            konekcija.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MM_A13;Integrated Security=True;";
             komanda = new SqlCommand();
             komanda.Connection = konekcija;
             tabela = new DataTable();

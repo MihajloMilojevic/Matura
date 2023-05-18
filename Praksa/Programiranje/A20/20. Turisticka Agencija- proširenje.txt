@@ -1,0 +1,28 @@
+Create table Tip_Sobe
+(
+	tip_sobeID INT Primary key,
+	naziv Varchar(40) NOT NULL
+)
+
+Create table Smestaj
+(
+	HotelID int not null REFERENCES Hotel(HotelID),
+	BrojSobe INT not null,
+ 	spratnost Varchar(40) NOT NULL,
+	brojKreveta INT not null,
+	tip_sobeID int not null REFERENCES Tip_Sobe(tip_sobeID),
+	opis Varchar(40),
+	PRIMARY KEY(HotelID, BrojSobe)
+   	
+)
+
+Create table Nacin_placanja
+(
+ nacinID int Primary key,
+ naziv Varchar(40) not null
+)
+
+ALTER TABLE Uplata
+ADD nacinID  int FOREIGN KEY (nacinID) REFERENCES Nacin_placanja(nacinID);
+
+

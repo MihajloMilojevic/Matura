@@ -1,0 +1,11 @@
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\bin\Debug\A9.exe.config
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\bin\Debug\A9.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\bin\Debug\A9.pdb
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.csproj.AssemblyReference.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.csproj.SuggestedBindingRedirects.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.Form1.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.Properties.Resources.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.csproj.GenerateResource.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.csproj.CoreCompileInputs.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A9\obj\Debug\A9.pdb

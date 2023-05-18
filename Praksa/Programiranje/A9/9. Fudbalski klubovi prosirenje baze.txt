@@ -1,0 +1,12 @@
+CREATE TABLE igraci
+( 
+  IgracID INT PRIMARY KEY,
+  ime NVARCHAR(30) NOT NULL,
+  prezime NVARCHAR(20) NOT NULL,
+  datum_rodjenja DATE NOT NULL,
+  zemlja NVARCHAR(30) NOT NULL,
+  datum_dolaska DATE NOT NULL,
+  datum_odlaska DATE,
+  klubID INT FOREIGN KEY REFERENCES KLUB(KlubID),
+  CONSTRAINT chk_date CHECK(datum_odlaska >datum_dolaska)	
+)
