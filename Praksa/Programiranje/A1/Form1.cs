@@ -173,5 +173,67 @@ namespace A1
                     );
             }
         }
+
+        private void izlaz2Btn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void prikaziBtn_Click(object sender, EventArgs e)
+        {
+            int max = DateTime.Now.Year;
+            int min = max - 10;
+            if (maxGodNUD.Value != 0) {
+                max = (int)maxGodNUD.Value;
+            }
+            if(minGodNUD.Value != 0)
+            {
+                min = (int)minGodNUD.Value;
+            }
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"SELECT c.Ime + ' ' + c.Prezime as ""Citalac"", YEAR(nc.Datum_uzimanja) as ""Godina"", COUNT(nc.Datum_uzimanja) as ""Broj iznajmljivanja"", COUNT(nc.Datum_vracanja) as ""Broj vraćanja"" FROM citalac c JOIN na_citanju nc ON c.citalacId = nc.CitalacID where c.citalacId = @ID and YEAR(nc.Datum_uzimanja) BETWEEN @MIN AND @MAX group by YEAR(datum_uzimanja), c.Ime, c.Prezime order by year(nc.Datum_uzimanja) asc ";
+            komanda.Parameters.AddWithValue("@ID", citalacCb.SelectedItem.ToString().Split('-')[0]);
+            komanda.Parameters.AddWithValue("@MIN", min);
+            komanda.Parameters.AddWithValue("@MAX", max);
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            podaciDGV.DataSource = tabela;
+            for(int i = 0; i < tabela.Rows.Count; i++)
+            {
+                chart1.Series["iznajmljeno"].Points.AddXY(tabela.Rows[i][1], tabela.Rows[i][2]);
+                chart1.Series["vraceno"].Points.AddXY(tabela.Rows[i][1], tabela.Rows[i][3]);
+            }
+            konekcija.Close();
+        }
+        private void FillCombo()
+        {
+            citalacCb.Items.Clear();
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                DataRow red = tabela.Rows[i];
+                citalacCb.Items.Add(red[0] + "-" + red[2] + " " + red[3]);
+            }
+        }
+
+        private void iznajmljivanjaTab_Enter(object sender, EventArgs e)
+        {
+            GetData();
+            FillCombo();
+        }
+
+        private void maxGodNUD_ValueChanged(object sender, EventArgs e)
+        {
+            int max = (int)maxGodNUD.Value;
+            int min = (int)minGodNUD.Value;
+            if (max < min) maxGodNUD.Value = min;
+        }
+
+        private void minGodNUD_ValueChanged(object sender, EventArgs e)
+        {
+            int max = (int)maxGodNUD.Value;
+            int min = (int)minGodNUD.Value;
+            if (max < min) minGodNUD.Value = max;
+        }
     }
 }
