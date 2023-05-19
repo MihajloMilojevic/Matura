@@ -75,9 +75,9 @@ namespace A20
             }
             else
             {
-                SortedSet<string> aranzmani = new SortedSet<string>();
+                List<string> aranzmani = new List<string>();
                 foreach (Ugovor u in ugovori)
-                    if (u.destinacija == destinacijaCb.SelectedItem)
+                    if (u.destinacija == destinacijaCb.SelectedItem.ToString())
                         aranzmani.Add("(Ugovor br. " + u.id + ") " + u.klijent);
                 aranzmanCb.Items.Clear();
                 aranzmanCb.Items.Add("Odaberi aranžman");
@@ -102,20 +102,70 @@ namespace A20
             }
             else
             {
-                Konekcija();
-                konekcija.Open();
-                string id = aranzmanCb.SelectedItem.ToString().Split(')')[0].Split(' ')[2];
-                komanda.CommandText = @"SELECT ta.DatumPolaska, ta.DatumPovratka, ta.UkupnaCenaAranzmana as ""Cena"", ta.UkupnaCenaAranzmana - SUM(u.iznos) as ""Dugovanje"" FROM Turisticki_aranzman ta JOIN Uplata u on u.UgovorID = ta.UgovorID  WHERE ta.UgovorID = @ID GROUP BY ta.DatumPolaska, ta.DatumPovratka, ta.UkupnaCenaAranzmana";
-                komanda.Parameters.AddWithValue("@ID", id);
-                adapter.SelectCommand = komanda;
-                adapter.Fill(tabela);
-                DataRow red = tabela.Rows[0];
-                datumi.SelectionStart = DateTime.Parse(red[0].ToString());
-                datumi.SelectionEnd = DateTime.Parse(red[1].ToString());
-                ukupnaCenaLB.Text = red[2].ToString();
-                dugLB.Text = red[3].ToString();
-                konekcija.Close();
+                PodaciOUgovoru();
             }
+        }
+        private void PodaciOUgovoru()
+        {
+            Konekcija();
+            konekcija.Open();
+            string id = aranzmanCb.SelectedItem.ToString().Split(')')[0].Split(' ')[2];
+            komanda.CommandText = @"SELECT ta.DatumPolaska, ta.DatumPovratka, ta.UkupnaCenaAranzmana as ""Cena"", ta.UkupnaCenaAranzmana - SUM(u.iznos) as ""Dugovanje"" FROM Turisticki_aranzman ta JOIN Uplata u on u.UgovorID = ta.UgovorID  WHERE ta.UgovorID = @ID GROUP BY ta.DatumPolaska, ta.DatumPovratka, ta.UkupnaCenaAranzmana";
+            komanda.Parameters.AddWithValue("@ID", id);
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            DataRow red = tabela.Rows[0];
+            datumi.SelectionStart = DateTime.Parse(red[0].ToString());
+            datumi.SelectionEnd = DateTime.Parse(red[1].ToString());
+            ukupnaCenaLB.Text = red[2].ToString();
+            dugLB.Text = red[3].ToString();
+            konekcija.Close();
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"SELECT rata, iznos, FORMAT(DatumUplate, 'dd.MM.yyyy') FROM Uplata WHERE ugovorId = @ID ORDER BY RATA ASC";
+            komanda.Parameters.AddWithValue("@ID", id);
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            konekcija.Close();
+
+            listView1.Clear();
+            listView1.Columns.Add("Rata", 70);
+            listView1.Columns.Add("Iznos", 120);
+            listView1.Columns.Add("Datum uplate", 150);
+
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.FullRowSelect = true;
+
+            foreach (DataRow red2 in tabela.Rows)
+            {
+                listView1.Items.Add(new ListViewItem(new string[]{
+                    red2[0].ToString(),
+                    int.Parse(red2[1].ToString()).ToString("0.00"),
+                    red2[2].ToString()
+                }));
+            }
+        }
+
+        private void uplatiBtn_Click(object sender, EventArgs e)
+        {
+            Konekcija();
+            konekcija.Open();
+            string id = aranzmanCb.SelectedItem.ToString().Split(')')[0].Split(' ')[2];
+            int max = int.Parse(listView1.Items[0].SubItems[0].Text);
+            foreach(ListViewItem it in listView1.Items)
+            {
+                int x = int.Parse(it.SubItems[0].Text);
+                if (x > max) max = x;
+            }
+            komanda.CommandText = @"INSERT INTO Uplata (UgovorID, Rata, iznos, DatumUplate) VALUES(@ID, @RATA, @IZNOS, GETDATE());";
+            komanda.Parameters.AddWithValue("@ID", id);
+            komanda.Parameters.AddWithValue("@RATA", max+1);
+            komanda.Parameters.AddWithValue("@IZNOS", textBox1.Text);
+            komanda.ExecuteNonQuery();
+            konekcija.Close();
+            textBox1.Text = "";
+            PodaciOUgovoru();
         }
     }
 }
