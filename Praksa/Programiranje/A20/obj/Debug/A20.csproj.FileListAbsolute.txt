@@ -11,3 +11,16 @@ C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.exe
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.pdb
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Prikaz.resources
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Uplata.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\bin\Debug\A20.exe.config
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\bin\Debug\A20.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\bin\Debug\A20.pdb
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.AssemblyReference.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.SuggestedBindingRedirects.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Form1.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Prikaz.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Properties.Resources.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.Uplata.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.GenerateResource.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.csproj.CoreCompileInputs.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A20\obj\Debug\A20.pdb
