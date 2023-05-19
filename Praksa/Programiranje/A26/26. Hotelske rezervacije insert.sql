@@ -970,3 +970,6 @@ VALUES(39,26,'Televizor, mini bar')
 
 INSERT INTO dodatak
 VALUES(40,21,'Fen za kosu, internet, televizor')
+
+UPDATE uplata
+SET IZNOS = iznos * RAND();

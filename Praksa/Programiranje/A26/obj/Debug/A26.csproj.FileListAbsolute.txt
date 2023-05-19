@@ -1,0 +1,13 @@
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\bin\Debug\A26.exe.config
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\bin\Debug\A26.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\bin\Debug\A26.pdb
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.Form1.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.Placanje.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.Properties.Resources.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.Rezervacija.resources
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.csproj.GenerateResource.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.exe
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A26\obj\Debug\A26.pdb

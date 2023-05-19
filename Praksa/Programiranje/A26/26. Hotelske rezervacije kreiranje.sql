@@ -74,5 +74,5 @@ CREATE TABLE dodatak
     dodatak VARCHAR(70) NOT NULL
 )
 
-ALTER TABLE uplata
-ADD datum_uplate DATE
+--ALTER TABLE uplata
+--ADD datum_uplate DATE
