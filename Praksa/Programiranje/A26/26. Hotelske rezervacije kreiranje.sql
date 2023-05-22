@@ -45,7 +45,7 @@ CREATE TABLE rezervacija
 )
 CREATE TABLE uplata
 (
-    uplata_id INT PRIMARY KEY,
+    uplata_id INT IDENTITY(1,1) PRIMARY KEY,
     rezervacija_id INT REFERENCES rezervacija(rezervacija_id),
     nacin_placanja_id INT REFERENCES dbo.nacin_placanja(nacin_placanja_id),
     iznos INT NOT NULL

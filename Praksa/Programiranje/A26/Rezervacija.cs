@@ -30,10 +30,25 @@ namespace A26
             tabela = new DataTable();
             adapter = new SqlDataAdapter();
         }
-        
+
+        private void zatvoriBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void Rezervacija_Load(object sender, EventArgs e)
         {
-            
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"SELECT COUNT(*) FROM soba;";
+            string kap = (komanda.ExecuteScalar()).ToString();
+            ukupnoLB.Text = "Ukupni kapacitet: " + kap + " soba";
+            konekcija.Close();
+        }
+
+        private void pretragaBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

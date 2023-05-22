@@ -59,6 +59,18 @@ namespace A26
             GetData();
             foreach(Ugovor u in ugovori)
                 brojeviCB.Items.Add(u.ugovorId);
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"SELECT DISTINCT nacin_placanja FROM nacin_placanja";
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            nacinPlacanjaCb.Items.Add("Izaberite način plaćanja...");
+            nacinPlacanjaCb.SelectedIndex = 0;
+            foreach(DataRow red in tabela.Rows)
+            {
+                nacinPlacanjaCb.Items.Add(red[0].ToString());
+            }
+            konekcija.Close();
         }
 
         private void brojeviCB_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +86,7 @@ namespace A26
                 ukupanIznosLb.Text = "/";
                 rokZaIsplatuLb.Text = "/";
                 dugLb.Text = "/";
+                uplateList.Clear();
             }
             else
             {
@@ -84,7 +97,77 @@ namespace A26
                 ukupanIznosLb.Text = ugovor.zaUplatu;
                 rokZaIsplatuLb.Text = ugovor.rok;
                 dugLb.Text = ugovor.dug;
+                ListaUplata();
             }
+        }
+
+        private void zatvoriBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        void ListaUplata()
+        {
+            string id = brojeviCB.SelectedItem.ToString();
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"SELECT u.iznos, n.nacin_placanja FROM uplata u JOIN nacin_placanja n on u.nacin_placanja_id = n.nacin_placanja_id WHERE u.rezervacija_id = @ID ORDER BY u.uplata_id ASC";
+            komanda.Parameters.AddWithValue("@ID", id);
+            adapter.SelectCommand = komanda;
+            adapter.Fill(tabela);
+            uplateList.Clear();
+            uplateList.Columns.Add("Rata", 70);
+            uplateList.Columns.Add("Iznos", 120);
+            uplateList.Columns.Add("Način plaćanja", 200);
+            uplateList.View = View.Details;
+            uplateList.GridLines = true;
+            uplateList.FullRowSelect = true;
+            for(int i = 0; i < tabela.Rows.Count; i++)
+            {
+                string[] cols =
+                {
+                    (i + 1).ToString(),
+                    int.Parse(tabela.Rows[i][0].ToString()).ToString("0.00"),
+                    tabela.Rows[i][1].ToString()
+                };
+                ListViewItem it = new ListViewItem(cols);
+                uplateList.Items.Add(it);
+            }
+            konekcija.Close();
+        }
+        private void uplatiBtn_Click(object sender, EventArgs e)
+        {
+            if(nacinPlacanjaCb.SelectedIndex == 0)
+            {
+                MessageBox.Show(
+                        "Odaberite način plaćanja",
+                        "Greška",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                return;
+            }
+            string id = brojeviCB.SelectedItem.ToString();
+            string nacinPlacanja = nacinPlacanjaCb.SelectedItem.ToString();
+            int iznos;
+            if (!int.TryParse(iznosTB.Text, out iznos))
+            {
+                MessageBox.Show(
+                        "Unesite iznos",
+                        "Greška",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                return;
+            }
+            Konekcija();
+            konekcija.Open();
+            komanda.CommandText = @"INSERT INTO uplata(iznos, nacin_placanja_id, rezervacija_id) VALUES(@IZNOS, (SELECT nacin_placanja_id FROM nacin_placanja WHERE nacin_placanja = @NACIN), @ID);";            komanda.Parameters.AddWithValue("@IZNOS", iznos);
+            komanda.Parameters.AddWithValue("@NACIN", nacinPlacanja);
+            komanda.Parameters.AddWithValue("@ID", id);
+            komanda.ExecuteNonQuery();
+            konekcija.Close();
+            iznosTB.Text = "";
+            ListaUplata();
         }
     }
 }
