@@ -1,0 +1,12 @@
+ string select = "SELECT DISTINCT soba.soba_id AS No, tip_sobe.tip_sobe AS 'Tip Sobe', soba.sprat AS Sprat";
+                string join1 = "FROM rezervacija INNER JOIN rezervacija_sobe ON rezervacija.rezervacija_id = rezervacija_sobe.rezervacija_id";
+                string join2 = "INNER JOIN soba ON rezervacija_sobe.soba_id = soba.soba_id";
+                string join3 = "INNER JOIN tip_sobe ON soba.tip_sobe_id = tip_sobe.tip_sobe_id";
+                string where = "WHERE rezervacija.pocetak_rezervacije NOT BETWEEN @pocetak AND @kraj AND " +
+                    "rezervacija.kraj_rezervacije NOT BETWEEN @pocetak AND @kraj AND " +
+                    "@pocetak NOT BETWEEN rezervacija.pocetak_rezervacije AND rezervacija.kraj_rezervacije AND " +
+                    "@kraj NOT BETWEEN rezervacija.pocetak_rezervacije AND rezervacija.kraj_rezervacije";
+                string order = "ORDER BY soba.soba_id ASC";
+                komanda.CommandText = select + " " + join1 + " " + join2 + " " + join3 + " " + where + " " + order;
+                komanda.Parameters.AddWithValue("@pocetak", monthCalendar1.SelectionStart);
+                komanda.Parameters.AddWithValue("@kraj", monthCalendar2.SelectionEnd);

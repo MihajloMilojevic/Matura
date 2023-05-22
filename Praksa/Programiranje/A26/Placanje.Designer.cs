@@ -45,6 +45,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.brojeviCB = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.nacinPlacanjaCb = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.iznosTB = new System.Windows.Forms.TextBox();
+            this.uplateList = new System.Windows.Forms.ListView();
+            this.uplatiBtn = new System.Windows.Forms.Button();
+            this.zatvoriBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +60,7 @@
             this.dugLb.AutoSize = true;
             this.dugLb.Location = new System.Drawing.Point(75, 217);
             this.dugLb.Name = "dugLb";
-            this.dugLb.Size = new System.Drawing.Size(20, 29);
+            this.dugLb.Size = new System.Drawing.Size(15, 24);
             this.dugLb.TabIndex = 16;
             this.dugLb.Text = "/";
             // 
@@ -62,7 +69,7 @@
             this.rokZaIsplatuLb.AutoSize = true;
             this.rokZaIsplatuLb.Location = new System.Drawing.Point(180, 188);
             this.rokZaIsplatuLb.Name = "rokZaIsplatuLb";
-            this.rokZaIsplatuLb.Size = new System.Drawing.Size(20, 29);
+            this.rokZaIsplatuLb.Size = new System.Drawing.Size(15, 24);
             this.rokZaIsplatuLb.TabIndex = 15;
             this.rokZaIsplatuLb.Text = "/";
             // 
@@ -71,7 +78,7 @@
             this.ukupanIznosLb.AutoSize = true;
             this.ukupanIznosLb.Location = new System.Drawing.Point(168, 159);
             this.ukupanIznosLb.Name = "ukupanIznosLb";
-            this.ukupanIznosLb.Size = new System.Drawing.Size(20, 29);
+            this.ukupanIznosLb.Size = new System.Drawing.Size(15, 24);
             this.ukupanIznosLb.TabIndex = 14;
             this.ukupanIznosLb.Text = "/";
             // 
@@ -80,7 +87,7 @@
             this.brojDanaLb.AutoSize = true;
             this.brojDanaLb.Location = new System.Drawing.Point(134, 130);
             this.brojDanaLb.Name = "brojDanaLb";
-            this.brojDanaLb.Size = new System.Drawing.Size(20, 29);
+            this.brojDanaLb.Size = new System.Drawing.Size(15, 24);
             this.brojDanaLb.TabIndex = 13;
             this.brojDanaLb.Text = "/";
             // 
@@ -89,7 +96,7 @@
             this.pocetakLb.AutoSize = true;
             this.pocetakLb.Location = new System.Drawing.Point(196, 101);
             this.pocetakLb.Name = "pocetakLb";
-            this.pocetakLb.Size = new System.Drawing.Size(20, 29);
+            this.pocetakLb.Size = new System.Drawing.Size(15, 24);
             this.pocetakLb.TabIndex = 12;
             this.pocetakLb.Text = "/";
             // 
@@ -98,7 +105,7 @@
             this.ugovaracLb.AutoSize = true;
             this.ugovaracLb.Location = new System.Drawing.Point(136, 72);
             this.ugovaracLb.Name = "ugovaracLb";
-            this.ugovaracLb.Size = new System.Drawing.Size(20, 29);
+            this.ugovaracLb.Size = new System.Drawing.Size(15, 24);
             this.ugovaracLb.TabIndex = 11;
             this.ugovaracLb.Text = "/";
             // 
@@ -107,7 +114,7 @@
             this.brojUgovoraLb.AutoSize = true;
             this.brojUgovoraLb.Location = new System.Drawing.Point(168, 43);
             this.brojUgovoraLb.Name = "brojUgovoraLb";
-            this.brojUgovoraLb.Size = new System.Drawing.Size(20, 29);
+            this.brojUgovoraLb.Size = new System.Drawing.Size(15, 24);
             this.brojUgovoraLb.TabIndex = 10;
             this.brojUgovoraLb.Text = "/";
             // 
@@ -116,7 +123,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 217);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 29);
+            this.label8.Size = new System.Drawing.Size(50, 24);
             this.label8.TabIndex = 9;
             this.label8.Text = "Dug:";
             // 
@@ -125,7 +132,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 188);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 29);
+            this.label7.Size = new System.Drawing.Size(130, 24);
             this.label7.TabIndex = 8;
             this.label7.Text = "Rok za isplatu:";
             // 
@@ -134,7 +141,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 29);
+            this.label5.Size = new System.Drawing.Size(95, 24);
             this.label5.TabIndex = 6;
             this.label5.Text = "Broj dana:";
             // 
@@ -143,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 29);
+            this.label4.Size = new System.Drawing.Size(144, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "Početak usluge:";
             // 
@@ -152,7 +159,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 29);
+            this.label3.Size = new System.Drawing.Size(95, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Ugovarač:";
             // 
@@ -161,7 +168,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 29);
+            this.label2.Size = new System.Drawing.Size(122, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Broj ugovora:";
             // 
@@ -193,7 +200,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 159);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 29);
+            this.label6.Size = new System.Drawing.Size(129, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "Ukupan iznos:";
             // 
@@ -202,7 +209,7 @@
             this.brojeviCB.FormattingEnabled = true;
             this.brojeviCB.Location = new System.Drawing.Point(17, 42);
             this.brojeviCB.Name = "brojeviCB";
-            this.brojeviCB.Size = new System.Drawing.Size(369, 37);
+            this.brojeviCB.Size = new System.Drawing.Size(369, 30);
             this.brojeviCB.TabIndex = 4;
             this.brojeviCB.SelectedIndexChanged += new System.EventHandler(this.brojeviCB_SelectedIndexChanged);
             // 
@@ -211,21 +218,90 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 29);
+            this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Broj ugovora:";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(416, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(139, 24);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Način plaćanja:";
+            // 
+            // nacinPlacanjaCb
+            // 
+            this.nacinPlacanjaCb.FormattingEnabled = true;
+            this.nacinPlacanjaCb.Location = new System.Drawing.Point(420, 42);
+            this.nacinPlacanjaCb.Name = "nacinPlacanjaCb";
+            this.nacinPlacanjaCb.Size = new System.Drawing.Size(282, 30);
+            this.nacinPlacanjaCb.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(416, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(115, 24);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Iznos uplate:";
+            // 
+            // iznosTB
+            // 
+            this.iznosTB.Location = new System.Drawing.Point(420, 134);
+            this.iznosTB.Name = "iznosTB";
+            this.iznosTB.Size = new System.Drawing.Size(282, 28);
+            this.iznosTB.TabIndex = 9;
+            // 
+            // uplateList
+            // 
+            this.uplateList.HideSelection = false;
+            this.uplateList.Location = new System.Drawing.Point(420, 207);
+            this.uplateList.Name = "uplateList";
+            this.uplateList.Size = new System.Drawing.Size(433, 165);
+            this.uplateList.TabIndex = 10;
+            this.uplateList.UseCompatibleStateImageBehavior = false;
+            // 
+            // uplatiBtn
+            // 
+            this.uplatiBtn.Location = new System.Drawing.Point(745, 31);
+            this.uplatiBtn.Name = "uplatiBtn";
+            this.uplatiBtn.Size = new System.Drawing.Size(108, 41);
+            this.uplatiBtn.TabIndex = 11;
+            this.uplatiBtn.Text = "Uplati";
+            this.uplatiBtn.UseVisualStyleBackColor = true;
+            this.uplatiBtn.Click += new System.EventHandler(this.uplatiBtn_Click);
+            // 
+            // zatvoriBtn
+            // 
+            this.zatvoriBtn.Location = new System.Drawing.Point(745, 121);
+            this.zatvoriBtn.Name = "zatvoriBtn";
+            this.zatvoriBtn.Size = new System.Drawing.Size(108, 41);
+            this.zatvoriBtn.TabIndex = 12;
+            this.zatvoriBtn.Text = "Zatvori";
+            this.zatvoriBtn.UseVisualStyleBackColor = true;
+            this.zatvoriBtn.Click += new System.EventHandler(this.zatvoriBtn_Click);
+            // 
             // Placanje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 404);
+            this.Controls.Add(this.zatvoriBtn);
+            this.Controls.Add(this.uplatiBtn);
+            this.Controls.Add(this.uplateList);
+            this.Controls.Add(this.iznosTB);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.nacinPlacanjaCb);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.brojeviCB);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "Placanje";
             this.Text = "Placanje";
@@ -256,5 +332,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox brojeviCB;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox nacinPlacanjaCb;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox iznosTB;
+        private System.Windows.Forms.ListView uplateList;
+        private System.Windows.Forms.Button uplatiBtn;
+        private System.Windows.Forms.Button zatvoriBtn;
     }
 }
