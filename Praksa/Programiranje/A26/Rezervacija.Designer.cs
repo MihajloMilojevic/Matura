@@ -45,34 +45,34 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 24);
+            this.label1.Size = new System.Drawing.Size(104, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Polazak:";
             // 
             // polazakCalendar
             // 
-            this.polazakCalendar.Location = new System.Drawing.Point(88, 72);
+            this.polazakCalendar.Location = new System.Drawing.Point(123, 72);
             this.polazakCalendar.Name = "polazakCalendar";
             this.polazakCalendar.TabIndex = 1;
             // 
             // povratakCalendar
             // 
-            this.povratakCalendar.Location = new System.Drawing.Point(88, 243);
+            this.povratakCalendar.Location = new System.Drawing.Point(123, 297);
             this.povratakCalendar.Name = "povratakCalendar";
             this.povratakCalendar.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 243);
+            this.label2.Location = new System.Drawing.Point(5, 297);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 24);
+            this.label2.Size = new System.Drawing.Size(106, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Povratak";
             // 
             // pretragaBtn
             // 
-            this.pretragaBtn.Location = new System.Drawing.Point(321, 11);
+            this.pretragaBtn.Location = new System.Drawing.Point(390, 12);
             this.pretragaBtn.Name = "pretragaBtn";
             this.pretragaBtn.Size = new System.Drawing.Size(197, 40);
             this.pretragaBtn.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             // zatvoriBtn
             // 
-            this.zatvoriBtn.Location = new System.Drawing.Point(524, 11);
+            this.zatvoriBtn.Location = new System.Drawing.Point(593, 12);
             this.zatvoriBtn.Name = "zatvoriBtn";
             this.zatvoriBtn.Size = new System.Drawing.Size(197, 40);
             this.zatvoriBtn.TabIndex = 5;
@@ -96,36 +96,37 @@
             this.grid.AllowUserToDeleteRows = false;
             this.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid.Location = new System.Drawing.Point(321, 72);
+            this.grid.Location = new System.Drawing.Point(390, 73);
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
             this.grid.RowHeadersVisible = false;
-            this.grid.Size = new System.Drawing.Size(390, 333);
+            this.grid.RowHeadersWidth = 51;
+            this.grid.Size = new System.Drawing.Size(398, 431);
             this.grid.TabIndex = 6;
             // 
             // ukupnoLB
             // 
             this.ukupnoLB.AutoSize = true;
-            this.ukupnoLB.Location = new System.Drawing.Point(12, 435);
+            this.ukupnoLB.Location = new System.Drawing.Point(5, 522);
             this.ukupnoLB.Name = "ukupnoLB";
-            this.ukupnoLB.Size = new System.Drawing.Size(171, 24);
+            this.ukupnoLB.Size = new System.Drawing.Size(221, 29);
             this.ukupnoLB.TabIndex = 7;
             this.ukupnoLB.Text = "Ukupni kapaciteti: 0";
             // 
             // raspolozivoLB
             // 
             this.raspolozivoLB.AutoSize = true;
-            this.raspolozivoLB.Location = new System.Drawing.Point(317, 435);
+            this.raspolozivoLB.Location = new System.Drawing.Point(385, 522);
             this.raspolozivoLB.Name = "raspolozivoLB";
-            this.raspolozivoLB.Size = new System.Drawing.Size(207, 24);
+            this.raspolozivoLB.Size = new System.Drawing.Size(270, 29);
             this.raspolozivoLB.TabIndex = 8;
             this.raspolozivoLB.Text = "Raspoloživi kapaciteti: 0";
             // 
             // Rezervacija
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 497);
+            this.ClientSize = new System.Drawing.Size(808, 560);
             this.Controls.Add(this.raspolozivoLB);
             this.Controls.Add(this.ukupnoLB);
             this.Controls.Add(this.grid);
