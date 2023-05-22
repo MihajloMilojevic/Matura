@@ -201,11 +201,11 @@
 </VirtualHost>
 
 <VirtualHost *:80>
-    ServerAdmin webmaster@b.22matura.milojevicm.tech
+    ServerAdmin webmaster@b22.matura.milojevicm.tech
     DocumentRoot "C:/xampp/htdocs/Matura/Praksa/Veb/B22"
-    ServerName b.22matura.milojevicm.tech
-    ServerAlias b.22matura.milojevicm.tech
-    ErrorLog "logs/b.22matura.milojevicm.tech-error.log"
-    CustomLog "logs/b.22matura.milojevicm.tech-access.log" common
+    ServerName b22.matura.milojevicm.tech
+    ServerAlias b22.matura.milojevicm.tech
+    ErrorLog "logs/b22.matura.milojevicm.tech-error.log"
+    CustomLog "logs/b22.matura.milojevicm.tech-access.log" common
 </VirtualHost>
 
