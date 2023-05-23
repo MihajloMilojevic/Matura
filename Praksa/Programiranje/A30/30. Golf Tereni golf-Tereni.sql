@@ -76,7 +76,7 @@ CREATE TABLE Sudija_Teren (
 );
 
 /*    PROSIRENJE     */
-ALTER TABLE Teren ADD kategorija VARCHAR(50);
+--ALTER TABLE Teren ADD kategorija VARCHAR(50);
 
 INSERT INTO grad
 VALUES (1,'Kragujevac',034,34000,150835);

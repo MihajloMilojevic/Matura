@@ -9,3 +9,14 @@ C:\xampp\htdocs\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.GenerateRes
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A30\obj\Debug\A30.exe
 C:\xampp\htdocs\Matura\Praksa\Programiranje\A30\obj\Debug\A30.pdb
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.AssemblyReference.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.SuggestedBindingRedirects.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.Form1.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.Properties.Resources.resources
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.GenerateResource.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.csproj.CoreCompileInputs.cache
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\obj\Debug\A30.pdb
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.exe.config
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.exe
+C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.pdb
