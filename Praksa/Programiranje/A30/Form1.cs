@@ -136,5 +136,12 @@ namespace A30
             PrikaziListu();
             konekcija.Close();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new Analiza().ShowDialog();
+            Show();
+        }
     }
 }

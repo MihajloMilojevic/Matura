@@ -20,3 +20,4 @@ C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.exe.config
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.exe
 C:\Users\Programiranje\Desktop\Mihajlo Milojevic\Matura\Praksa\Programiranje\A30\bin\Debug\A30.pdb
+C:\xampp\htdocs\Matura\Praksa\Programiranje\A30\obj\Debug\A30.Analiza.resources
