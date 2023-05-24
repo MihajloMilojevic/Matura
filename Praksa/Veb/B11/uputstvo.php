@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/uputstva.css">
-    <title>B1 - Foto Galerija | Uputstvo</title>
+    <title>B11 - Vremenska prognoza | Uputstvo</title>
 </head>
 <body>
     <header>
-        <h1>Foto galerija - Uputstvo</h1>
+        <h1>Turistička agencija "Planinar" - Uputstvo</h1>
         <?php 
             $url = "uputstvo";
             require "./components/nav.php";

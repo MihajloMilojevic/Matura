@@ -1,0 +1,17 @@
+body {
+    background-color: #ff6100;
+    background-image: none;
+    margin: 0;
+    padding: 1rem;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+p {
+    color: black;
+    text-align: center;
+}

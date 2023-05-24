@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="./slike/LOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/autor.css">
-    <title>B1 - Foto Galerija | Autor</title>
+    <title>B11 - Vremenska prognoza | Autor</title>
 </head>
 <body>
     <header>
-        <h1>Foto galerija - Autor</h1>
+        <h1>Turistička agencija "Planinar" - Autor</h1>
         <?php 
             $url = "autor";
             require "./components/nav.php";

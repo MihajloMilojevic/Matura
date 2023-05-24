@@ -12,7 +12,8 @@ body {
     min-height: 100vh;
 }
 h1 {
-    color: #2b5480;
+    color: #ff6100;
+	text-align: center;
     padding: 1rem;
 }
 
@@ -21,34 +22,35 @@ a {
     text-decoration: none;
 }
 nav {
-	background-color: #2b5480;
+	max-width: 800px;
+	margin: auto;
+	background-color: white;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	color: white;
+	color: #0303ee;
 }
-
-.links {
-	display: flex;
-}
-
 .link {
+	flex: 1;
+	align-self: stretch;
 	padding: 1rem;
-	border-right: 1px solid white;
-	height: 100%;
+}
+.link:nth-child(2) {
+	border-left: 1px solid red;
+	border-right: 1px solid red;
 }
 .link.active {
-	background-color: #82b7d0;
-	color: black;
+	background-color: #ff6100;
+	color: white;
 }
-
-.zavrsni-ispit {
-	padding: 1rem;
-
+footer {
+    color: #ff6100;
+	text-align: center;
+    padding: 1rem;
 }
-
 main {
 	max-width: 800px;
 	width: 100%;
-	background-color: rgba(212, 212, 212, 0.8);
+	background-color: rgba(255, 255, 255, 0.75);
+	margin: 2rem auto;
 }
